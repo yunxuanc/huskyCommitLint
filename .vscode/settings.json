@@ -1,0 +1,8 @@
+{
+  "editor.indentSize": "tabSize",
+  "files.exclude": {
+    "**/.git": false,
+    "**/.vscode": false,
+    "**/.npmrc": false
+  }
+}

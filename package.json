@@ -1,0 +1,58 @@
+{
+  "name": "node-esm",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon -x babel-node src/index.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "nodemon": "^2.0.20",
+    "prettier": "2.8.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_ENV": "dev"
+    },
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "ext": "js json",
+    "ignore": [
+      "dist/"
+    ],
+    "watch": [
+      "src/"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
