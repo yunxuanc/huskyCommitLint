@@ -1,6 +1,7 @@
 console.log('ccc')
-    console.warn('kkkk');
+console.warn('kkkk')
 let a = 0
-  function fn () {
-    console.log(a)
-  }
+function fn() {
+  console.log(a)
+}
+fn()
