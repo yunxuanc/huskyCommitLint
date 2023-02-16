@@ -1,16 +1,24 @@
 module.exports = {
   types: [
-    { value: '✨新增', name: '新增:    新的内容' },
-    { value: '🐛修复', name: '修复:    修复一个Bug' },
-    { value: '📝文档', name: '文档:    变更的只有文档' },
-    { value: '💄格式', name: '格式:    空格, 分号等格式修复' },
-    { value: '♻️重构', name: '重构:    代码重构，注意和特性、修复区分开' },
-    { value: '⚡️性能', name: '性能:    提升性能' },
-    { value: '✅测试', name: '测试:    添加一个测试' },
-    { value: '🔧工具', name: '工具:    开发工具变动(构建、脚手架工具等)' },
-    { value: '⏪回滚', name: '回滚:    代码回退' }
+    { value: 'init', name: 'init 🎉:    初始化' },
+    { value: 'feat', name: 'feat ✨:    新增功能' },
+    { value: 'featWIP', name: 'featWIP ✨:    继续功能(进展中)' },
+    { value: 'fix', name: 'fix 🐛:    修复BUG' },
+    { value: 'docs', name: 'docs 📄:    变更文档' },
+    { value: 'style', name: 'style ✂:    修改样式' },
+    { value: 'refactor', name: 'refactor 🎸:    代码重构' },
+    { value: 'perf', name: 'perf ⚡:    性能提升' },
+    { value: 'test', name: 'test ✅:    测试内容' },
+    { value: 'revert', name: 'revert ⏪:     版本回滚' },
+    { value: 'build', name: 'build 📦:     打包构建' },
+    {
+      value: 'tool',
+      name: 'tool 🚀:    开发工具变动(构建、脚手架工具、第三方库等)'
+    },
+    { value: 'ci', name: 'ci 🪤:    CI配置 ' }
   ],
   scopes: [
+    { name: 'pages' },
     { name: 'components' },
     { name: 'utils' },
     { name: 'styles' },
