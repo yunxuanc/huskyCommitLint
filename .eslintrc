@@ -1,0 +1,27 @@
+{
+  "extends": ["taro", "plugin:@digitalgd/yss/recommended"],
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx"] }
+    ],
+    "class-methods-use-this": "off",
+    "prefer-rest-params": "off",
+    "arrow-body-style": "warn",
+    "space-before-function-paren": "off",
+    "taro/custom-component-children": "off",
+    "max-statements": ["error", 500],
+    "semi": "off",
+    "jsx-quotes": "off",
+    "taro/render-props": "off",
+    "taro/props-reserve-keyword": "off",
+    "import/prefer-default-export": "off"
+  },
+  "settings": {
+    "react": {
+        "version": "detect"
+    }
+},
+  "parser": "babel-eslint"
+}

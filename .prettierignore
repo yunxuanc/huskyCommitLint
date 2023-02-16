@@ -1,2 +1,10 @@
-dist
-node_modules/*
+/.vscode/*
+/dist/*
+/script/*
+/node_modules/**
+/src/cui/*
+/src/images/*
+
+/package.json
+/package-lock.json
+/REAME.md
