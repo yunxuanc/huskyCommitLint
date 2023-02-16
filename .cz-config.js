@@ -11,10 +11,11 @@ module.exports = {
     { value: '⏪回滚', name: '回滚:    代码回退' }
   ],
   scopes: [
-    { name: 'APP' },
-    { name: '小程序' },
-    { name: 'APP & 小程序' },
-    { name: '其他' }
+    { name: 'components' },
+    { name: 'utils' },
+    { name: 'styles' },
+    { name: 'deps' },
+    { name: 'other' }
   ],
   // it needs to match the value for field type. Eg.: 'fix'
   /*  scopeOverrides: {
@@ -29,8 +30,7 @@ module.exports = {
   messages: {
     type: '选择一种你的提交类型:',
     scope: '选择一个scope (可选):',
-    // used if allowCustomScopes is true
-    customScope: 'Denote the SCOPE of this change:',
+    customScope: '请输入自定义的scope:',
     subject: '短说明:',
     body: '长说明，使用"|"换行 (可选):',
     breaking: '非兼容性说明 (可选):',
@@ -38,7 +38,5 @@ module.exports = {
     confirmCommit: '确定提交说明? (yes/no)'
   },
   allowCustomScopes: true,
-  allowBreakingChanges: ['特性', '修复'],
-  // limit subject length
   subjectLimit: 100
 }
