@@ -25,6 +25,7 @@
     "@digitalgd/eslint-plugin-yss": "0.0.1",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog-zh": "0.0.2",
     "cz-customizable": "^7.0.0",
     "editorconfig": "^1.0.2",
@@ -69,7 +70,7 @@
   "description": "",
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog-zh"
+      "path": "node_modules/cz-customizable"
     }
   },
   "lint-staged": {
