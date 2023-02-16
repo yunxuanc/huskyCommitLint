@@ -2,18 +2,17 @@ module.exports = {
   types: [
     { value: 'init', name: 'init 🎉:    初始化' },
     { value: 'feat', name: 'feat ✨:    新增功能' },
-    { value: 'featWIP', name: 'featWIP ✨:    继续功能(进展中)' },
     { value: 'fix', name: 'fix 🐛:    修复BUG' },
     { value: 'docs', name: 'docs 📄:    变更文档' },
-    { value: 'style', name: 'style ✂:    修改样式' },
+    { value: 'style', name: 'style 💄:    修改样式' },
     { value: 'refactor', name: 'refactor 🎸:    代码重构' },
     { value: 'perf', name: 'perf ⚡:    性能提升' },
     { value: 'test', name: 'test ✅:    测试内容' },
     { value: 'revert', name: 'revert ⏪:     版本回滚' },
     { value: 'build', name: 'build 📦:     打包构建' },
     {
-      value: 'tool',
-      name: 'tool 🚀:    开发工具变动(构建、脚手架工具、第三方库等)'
+      value: 'chore',
+      name: 'chore 🚀:    开发工具变动(构建/工程依赖/工具)'
     },
     { value: 'ci', name: 'ci 🪤:    CI配置 ' }
   ],

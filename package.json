@@ -6,12 +6,13 @@
     "start": "nodemon -x babel-node src/index.js",
     "prepare": "husky install",
     "prettier": "prettier --write",
-    "lint": "npx eslint",
     "lint:fix": "npx eslint --fix",
     "lint-staged": "lint-staged",
     "commit": "git-cz",
     "commit-all": "git add . && npm run lint-staged && git cz",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "release": "standard-version -t $(date +release-%Y%m%d-v)",
+    "release:first": "standard-version --first-release -t $(date +release-%Y%m%d-v)"
   },
   "dependencies": {
     "react": "^18.2.0"
@@ -40,6 +41,7 @@
     "lint-staged": "^13.1.1",
     "nodemon": "^2.0.20",
     "prettier": "2.8.3",
+    "standard-version": "^9.5.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
