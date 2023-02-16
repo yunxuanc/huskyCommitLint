@@ -22,7 +22,7 @@ module.exports = {
   prompt: {
     questions: {
       type: {
-        description: "Select the type of change that you're committing",
+        description: '选择一种提交类型：',
         enum: {
           feat: {
             description: 'A new feature',
@@ -86,35 +86,35 @@ module.exports = {
         }
       },
       scope: {
-        description:
-          'What is the scope of this change (e.g. component or file name)'
+        description: '选择一个scope (可选):'
       },
       subject: {
-        description: 'Write a short, imperative tense description of the change'
+        description: '修改内容简短说明:'
       },
       body: {
-        description: 'Provide a longer description of the change'
+        description: '修改内容详细说明 (可选):'
       },
-      isBreaking: {
-        description: 'Are there any breaking changes?'
-      },
-      breakingBody: {
-        description:
-          'A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself'
-      },
+      // isBreaking: {
+      //   description: '非兼容性说明 (可选):'
+      // },
+      // breakingBody: {
+      //   description:
+      //     'A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself'
+      // },
       breaking: {
-        description: 'Describe the breaking changes'
+        description: '非兼容性说明 (可选):'
       },
-      isIssueAffected: {
-        description: 'Does this change affect any open issues?'
-      },
-      issuesBody: {
-        description:
-          'If issues are closed, the commit requires a body. Please enter a longer description of the commit itself'
-      },
-      issues: {
-        description: 'Add issue references (e.g. "fix #123", "re #123".)'
-      }
+      // isIssueAffected: {
+      //   description: 'Does this change affect any open issues?'
+      // },
+      // issuesBody: {
+      //   description:
+      //     'If issues are closed, the commit requires a body. Please enter a longer description of the commit itself'
+      // },
+      // issues: {
+      //   description: 'Add issue references (e.g. "fix #123", "re #123".)'
+      // }
+      confirmCommit: '确定提交说明? (yes/no):'
     }
   }
 }

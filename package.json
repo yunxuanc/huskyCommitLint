@@ -8,7 +8,9 @@
     "prettier": "prettier --write",
     "lint": "npx eslint",
     "lint:fix": "npx eslint --fix",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "commit": "git-cz",
+    "full-commit": "git add . && npm run lint-staged && git cz"
   },
   "dependencies": {
     "react": "^18.2.0"
@@ -22,6 +24,8 @@
     "@commitlint/config-conventional": "^17.4.2",
     "@digitalgd/eslint-plugin-yss": "0.0.1",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog-zh": "0.0.2",
     "cz-customizable": "^7.0.0",
     "editorconfig": "^1.0.2",
     "eslint": "^4.19.1",
@@ -63,6 +67,11 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-zh"
+    }
+  },
   "lint-staged": {
     "**/*.{js,jsx}": [
       "npm run lint:fix",
