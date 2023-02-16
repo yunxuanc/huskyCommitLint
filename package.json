@@ -22,6 +22,7 @@
     "@commitlint/config-conventional": "^17.4.2",
     "@digitalgd/eslint-plugin-yss": "0.0.1",
     "babel-eslint": "^10.1.0",
+    "cz-customizable": "^7.0.0",
     "editorconfig": "^1.0.2",
     "eslint": "^4.19.1",
     "eslint-config-taro": "^3.6.1",
@@ -63,9 +64,16 @@
   "license": "ISC",
   "description": "",
   "lint-staged": {
-    "**/*.{js,jsx}": ["npm run lint:fix", "npm run prettier"],
-    "**/*.{css,less,scss}": ["stylelint", "npm run prettier"],
-    "**/*.{json,html}": ["npm run prettier"]
+    "**/*.{js,jsx}": [
+      "npm run lint:fix",
+      "npm run prettier"
+    ],
+    "**/*.{css,less,scss}": [
+      "stylelint",
+      "npm run prettier"
+    ],
+    "**/*.{json,html}": [
+      "npm run prettier"
+    ]
   }
-
 }
