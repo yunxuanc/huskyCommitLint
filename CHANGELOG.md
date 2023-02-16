@@ -4,6 +4,7 @@
 ### Features
 
 * init a9bf679
+* **pages:** 新增日志 64ae468
 
 
 
