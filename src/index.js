@@ -5,3 +5,4 @@ function fn() {
   console.log(a)
 }
 fn()
+fn()
