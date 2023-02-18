@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/yunxuanc/huskyCommitLint/compare/release-20230218-v1.2.1...release-20230218-v1.2.2) (2023-02-18)
+
+
+### 🚀 chore | 工具/依赖变更
+
+* **deps:** commitlint config changee ([33cad72](https://github.com/yunxuanc/huskyCommitLint/commit/33cad72e885c67a184fdfd91b0591380be70bebf))
+
 ### [1.2.1](https://github.com/yunxuanc/huskyCommitLint/compare/release-20230218-v1.2.0...release-20230218-v1.2.1) (2023-02-18)
 
 ## [1.2.0](https://github.com/yunxuanc/huskyCommitLint/compare/release-20230218-v1.1.6-dev.0...release-20230218-v1.2.0) (2023-02-18)
