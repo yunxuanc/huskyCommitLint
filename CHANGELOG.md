@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/yunxuanc/huskyCommitLint/compare/release-20230218-v1.1.2...release-20230218-v1.1.3) (2023-02-18)
+
+
+### ⚡ Performance Improvements | 性能优化
+
+* **deps:** merge pre-commit commit-msg lint ([8a017ec](https://github.com/yunxuanc/huskyCommitLint/commit/8a017ec2a922837df8c16cad22ecfa19f7d92a64))
+
 ### [1.1.2](https://github.com/yunxuanc/huskyCommitLint/compare/release-20230218-v1.1.1...release-20230218-v1.1.2) (2023-02-18)
 
 ### [1.1.1](https://github.com/yunxuanc/huskyCommitLint/compare/release-20230218-v1.1.0...release-20230218-v1.1.1) (2023-02-18)
