@@ -1,19 +1,19 @@
 module.exports = {
   types: [
     {
-      value: ':construction: wip',
+      value: 'wip',
       name: '💪  wip:    进展中(Work in progress)'
     },
-    { value: ':sparkles: feat', name: 'feat ✨:    新功能' },
-    { value: ':bug: fix', name: 'fix 🐛:    修复BUG' },
-    { value: ':bug: refactor', name: 'refactor 🔨:    重构' },
-    { value: ':art: style', name: 'style 🎨:    ui样式' },
-    { value: ':robot: perf', name: 'perf ⚡:    性能优化' },
-    { value: ':bug: docs', name: 'docs 📝:    文档' },
-    { value: ':white_check_mark: test', name: 'test ✅:    测试' },
+    { value: 'feat', name: 'feat ✨:    新功能' },
+    { value: '🐛 fix', name: 'fix 🐛:    修复BUG' },
+    { value: 'refactor', name: 'refactor 🔨:    重构' },
+    { value: 'style', name: 'style 🎨:    ui样式' },
+    { value: 'perf', name: 'perf ⚡:    性能优化' },
+    { value: 'docs', name: 'docs 📝:    文档' },
+    { value: 'test', name: 'test ✅:    测试' },
     { value: 'revert', name: 'revert ⏪:     版本回退' },
     {
-      value: ':rocket: chore',
+      value: 'chore',
       name: 'chore 🚀:    构建或依赖工具变更)'
     }
   ],
