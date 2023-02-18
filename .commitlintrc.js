@@ -19,6 +19,6 @@ module.exports = {
         'build' // 打包
       ]
     ],
-    'subject-empty': [2, 'always']
+    'subject-min-length': [2, 'always']
   }
 }
