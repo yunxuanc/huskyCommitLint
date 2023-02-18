@@ -18,6 +18,7 @@ module.exports = {
         'revert', // 回退
         'build' // 打包
       ]
-    ]
+    ],
+    'subject-case': [0]
   }
 }
