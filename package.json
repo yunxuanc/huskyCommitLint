@@ -4,12 +4,11 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon -x babel-node src/index.js",
-    "prepare": "husky install",
+    "prepare-husky": "husky install && npx husky add .husky/pre-commit \"npx lint-staged\" && npx husky add .husky/commit-msg \"npx commitlint -e\" && git add .husky",
     "prettier": "prettier --write",
     "lint:fix": "npx eslint --fix",
-    "lint-staged": "lint-staged",
-    "commit": "git-cz",
-    "commit-all": "git add . && npm run lint-staged && git cz",
+    "commit": "npx lint-staged && git-cz",
+    "commit-a": "git add . && npx lint-staged && git cz",
     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "release": "standard-version -t $(date +release-%Y%m%d-v)",
     "release:first": "standard-version --first-release -t $(date +release-%Y%m%d-v)"
