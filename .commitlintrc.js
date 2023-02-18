@@ -1,25 +1,24 @@
+const typeEnum = require('./.cz-config')
 module.exports = {
   extends: ['cz'],
+  // 自定义 rules
+  plugins: [
+    {
+      rules: {
+        'header-match-team-pattern': params => {
+          console.error('subject: ', params)
+          typeEnum.types.includes()
+          const pass = params.subject && !params.subject.includes('?')
+          const message = `subject 不能为空且不能包含?符号`
+          return [pass, message]
+        }
+      }
+    }
+  ],
   rules: {
-    // type 类型定义
-    'type-enum': [
-      2,
-      'always',
-      [
-        'wip', // wip功能
-        'feat', // 新功能 feature
-        'fix', // 修复 bug
-        'docs', // 文档注释
-        'style', // 代码格式(不影响代码运行的变动)
-        'refactor', // 重构(既不增加新功能，也不是修复bug)
-        'perf', // 性能优化
-        'test', // 增加测试
-        'chore', // 构建过程或辅助工具的变动
-        'revert', // 回退
-        'build' // 打包
-      ]
-    ],
-    'header-min-length': [0, 'always', 2],
-    'subject-min-length': [2, 'always', 1]
+    'type-enum': [2, 'always', typeEnum.types.map(i => i.value)],
+    'scope-enum': [2, 'always', typeEnum.scopes.map(i => i.name)],
+    'subject-empty': [2, 'never']
+    // 'header-match-team-pattern': [2, 'always']
   }
 }
