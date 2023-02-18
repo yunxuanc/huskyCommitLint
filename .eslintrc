@@ -20,8 +20,8 @@
   },
   "settings": {
     "react": {
-        "version": "detect"
+      "version": "detect"
     }
-},
+  },
   "parser": "babel-eslint"
 }

@@ -1,7 +1,7 @@
 /.vscode/*
 /dist/*
 /script/*
-/node_modules/**
+
 /src/cui/*
 /src/images/*
 
