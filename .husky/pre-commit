@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-
+PATH="/usr/local/bin:$PATH" # 配置环境变量，解决 sourceTree merge 后提交时报 npx not found
 npx lint-staged
