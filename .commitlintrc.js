@@ -17,7 +17,7 @@ module.exports = {
   ],
   rules: {
     'type-enum': [2, 'always', typeEnum.types.map(i => i.value)],
-    'scope-enum': [2, 'always', typeEnum.scopes.map(i => i.name)],
+    // 'scope-enum': [2, 'always', typeEnum.scopes.map(i => i.name)],
     'subject-empty': [2, 'never']
     // 'header-match-team-pattern': [2, 'always']
   }

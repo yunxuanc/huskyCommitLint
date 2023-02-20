@@ -1,5 +1,6 @@
 module.exports = {
   types: [
+    { type: 'wip', section: '💪 WIP | 进展中' },
     { type: 'init', section: '🎉 Init | 初始化' },
     { type: 'feat', section: '✨ Features | 新功能' },
     { type: 'fix', section: '🐛 Bug Fixes | Bug 修复' },
