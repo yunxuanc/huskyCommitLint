@@ -90,5 +90,12 @@
     "**/*.{json,html}": [
       "npm run prettier"
     ]
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true,
+      "commit": true,
+      "tag": true
+    }
   }
 }
