@@ -1,6 +1,6 @@
 const typeEnum = require('./.cz-config')
 module.exports = {
-  extends: ['git-commit-emoji', 'cz'],
+  // extends: ['cz'],
   // 自定义 rules
   plugins: [
     {
@@ -16,7 +16,7 @@ module.exports = {
     }
   ],
   rules: {
-    'type-enum': [2, 'always', typeEnum.types.map(i => i.value)],
+    // 'type-enum': [2, 'always', typeEnum.types.map(i => i.value)],
     // 'scope-enum': [2, 'always', typeEnum.scopes.map(i => i.name)],
     'subject-empty': [2, 'never']
     // 'header-match-team-pattern': [2, 'always']
