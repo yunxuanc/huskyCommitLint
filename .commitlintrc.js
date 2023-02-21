@@ -1,6 +1,6 @@
 const typeEnum = require('./.cz-config')
 module.exports = {
-  extends: ['cz'],
+  extends: ['git-commit-emoji', 'cz'],
   // 自定义 rules
   plugins: [
     {
