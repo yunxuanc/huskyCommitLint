@@ -1,6 +1,6 @@
 {
   "name": "node-esm",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon -x babel-node src/index.js",
@@ -10,7 +10,7 @@
     "commit": "npx lint-staged && git-cz",
     "commit-a": "git add . && npx lint-staged && git cz",
     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "release": "standard-version --preset gitmoji-config -t $(date +release-%Y%m%d-v) --first-release",
+    "release": "standard-version --preset gitmoji-config -t $(date +release-%Y%m%d-v)",
     "release:moji": "standard-version -t $(date +release-%Y%m%d-v)",
     "release:first": "standard-version --first-release -t $(date +release-%Y%m%d-v)"
   },
