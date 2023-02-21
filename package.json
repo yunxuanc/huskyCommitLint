@@ -10,7 +10,7 @@
     "commit": "npx lint-staged && git-cz",
     "commit-a": "git add . && npx lint-staged && git cz",
     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "release": "standard-version --preset gitmoji-config -t $(date +release-%Y%m%d-v)",
+    "release": "standard-version --preset gitmoji-config -t $(date +release-%Y%m%d-v) --first-release",
     "release:moji": "standard-version -t $(date +release-%Y%m%d-v)",
     "release:first": "standard-version --first-release -t $(date +release-%Y%m%d-v)"
   },
@@ -30,6 +30,7 @@
     "commitlint-config-git-commit-emoji": "^1.0.0",
     "conventional-changelog": "^3.1.25",
     "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-gitmoji-config": "^1.4.7",
     "cz-customizable": "^7.0.0",
     "editorconfig": "^1.0.2",
     "eslint": "^4.19.1",
